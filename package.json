@@ -1,0 +1,8 @@
+{
+  "name": "njt-departure-vision",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.12.4",
+    "phantom": "^0.7.2"
+  }
+}
