@@ -1,10 +1,13 @@
+
 var phantom = require('phantom');
+
+var station = process.argv[2] || "MP";
 
 phantom.create(function(ph) {
   return ph.createPage(function(page) {
-    return page.open("http://dv.njtransit.com/mobile/tid-mobile.aspx?sid=MP", function(status) {
+    return page.open("http://dv.njtransit.com/mobile/tid-mobile.aspx?sid="+station, function(status) {
       
-      console.log("opened departure vision?", status);
+      //console.log("opened departure vision?", status);
       page.includeJs('http://code.jquery.com/jquery-1.11.3.min.js', function(err) {
         
         setTimeout(function(){
