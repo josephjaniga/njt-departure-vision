@@ -4,7 +4,7 @@
   "dependencies": {
     "express": "^4.12.4",
     "phantom": "^0.7.2"
-  }
+  },
   "scripts":{
     "start":"node dv-train-details.js"
   }
