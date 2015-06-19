@@ -77,7 +77,6 @@ app.get('/train/*', function(req, res){
 }); // end server route
 
 var server = app.listen(app.get('port'), function () {
-  var host = server.address().address;
-  var port = server.address().port;
-  console.log('Train Information http://%s:%s', host, port);
+  var port = app.get('port');
+  console.log('Train Information on port: %s', app.get('port'));
 });
