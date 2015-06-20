@@ -2,6 +2,7 @@
   "name": "njt-departure-vision",
   "main": "dv-scrape.js",
   "dependencies": {
+    "aws-sdk": "^2.1.35",
     "express": "^4.12.4",
     "phantom": "^0.7.2",
     "phantomjs": "^1.9.17"
